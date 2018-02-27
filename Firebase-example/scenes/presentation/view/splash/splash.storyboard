@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y7N-A6-BUt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="PwY-J6-2Bq">
+            <objects>
+                <viewController id="Y7N-A6-BUt" customClass="SplashViewController" customModule="Shine_for_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c7Q-ZZ-3WP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firebase" translatesAutoresizingMaskIntoConstraints="NO" id="Yzu-tg-Xg8">
+                                <rect key="frame" x="144.5" y="174" width="86" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="BwY-fm-o8m"/>
+                                    <constraint firstAttribute="height" constant="82" id="qZN-96-PkM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yzu-tg-Xg8" firstAttribute="top" secondItem="89B-wr-sT5" secondAttribute="top" constant="154" id="I8l-FG-5bv"/>
+                            <constraint firstItem="Yzu-tg-Xg8" firstAttribute="centerX" secondItem="c7Q-ZZ-3WP" secondAttribute="centerX" id="bBu-5E-Nj1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="89B-wr-sT5"/>
+                    </view>
+                    <connections>
+                        <outlet property="icon" destination="Yzu-tg-Xg8" id="QBt-Ph-flK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dz6-yO-kSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292" y="104.7976011994003"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="firebase" width="180" height="180"/>
+    </resources>
+</document>
